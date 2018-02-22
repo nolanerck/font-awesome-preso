@@ -18,6 +18,7 @@
 			.reveal ul li, .reveal p
 			{
 				font-size: 34px;
+				text-align: left;
 			}
 
 			.highlight 
@@ -30,6 +31,11 @@
 				font-family: "Courier";
 				color: green;
 			}
+
+			.reveal p.centered
+			{
+				text-align: center;
+			}
 		</style>		
 	</head>
 
@@ -41,8 +47,8 @@
 
 				<section>
 					<h2>Font Awesome: Never Build Icons Again</h2>
-					<p>Nolan Erck</p>
-					<p>South of Shasta Consulting</p>
+					<p class="centered">Nolan Erck</p>
+					<p class="centered">South of Shasta Consulting</p>
 				</section>
 
 				<section>
@@ -86,8 +92,8 @@
 
 				<section>
 					<h2>Code And Slides</h2>
-					<p>GitHub: nolanerck</p>
-					<p>font-awesome-preso</p>
+					<p class="centered">GitHub: nolanerck</p>
+					<p class="centered">font-awesome-preso</p>
 				</section>
 
 				<section>
@@ -96,7 +102,7 @@
 
 				<section>
 					<h2>So what is FontAwesome?</h2>
-					<p>Building web apps = making icons
+					<p class="centered">Building web apps = making icons
 						<br />
 						...LOTS of icons!
 					</p>
@@ -109,18 +115,18 @@
 				</section>
 
 				<section>
-					<p>And colors...</p>
-					<p>Orientations...</p>
-					<p>And hover states...</p>
-					<p>With borders...</p>
-					<p>And shadows...</p>
+					<p class="centered">And colors...</p>
+					<p class="centered">Orientations...</p>
+					<p class="centered">And hover states...</p>
+					<p class="centered">With borders...</p>
+					<p class="centered">And shadows...</p>
 				</section>
 
 				<section>
-					<p>1 icon could = 10+ images.</p>
-					<p>How many icons in 1 webapp?</p>
-					<p>What if a color changes in the design?</p>
-					<p>= LOTS of repetitive work!</p>
+					<p class="centered">1 icon could = 10+ images.</p>
+					<p class="centered">How many icons in 1 webapp?</p>
+					<p class="centered">What if a color changes in the design?</p>
+					<p class="centered">= LOTS of repetitive work!</p>
 				</section>
 
 				<section>
@@ -138,6 +144,7 @@
 								<li>(size, color, borders, etc)</li>
 							</ul>
 						<li>Same idea, same concept.</li>
+						<li>Free and Pro versions available</li>
 					</ul>
 				</section>
 
@@ -153,7 +160,55 @@
 </pre>
 				</section>
 
+				<section>
+					<h2>How do I install Font Awesome?</h2>
+					<p class="centered">Can also just use their CDN:</p>
+<pre class="code">
+&lt;script defer<br />src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"&gt;&lt;/script&gt;
+</pre>
+				</section>
 
+				<section>
+					<h2>Using Font Awesome</h2>
+					<p>Just use the <i> HTML tag wherever you want an icon:</i>
+<pre class="code">
+&lt;i class="fas fa-camera-retro"&gt;&lt;/i&gt;
+</pre>
+					<p>"fas" is the default style, "fa-camera-retro" is the icon itself</p>
+					<p>Four styles available: Solid (fas), Regular (far), Light (fal), Brands (fab)</p>
+					<p>Regular and Light are only in the Pro version</p>
+				</section>
+
+				<section>
+					<h2>Demo 1</h2>
+<pre class="code">
+&lt;i class="fas fa-camera-retro"&gt;&lt;/i&gt;
+</pre>
+
+					<div class="centered">
+						<i class="fas fa-camera-retro"></i>
+					</div>
+				</section>
+
+				<section>
+					<h2>Icon Sizes</h2>
+<div class="centered">
+<pre class="code">
+&lt;i class="fas fa-camera-retro fa-sm"&gt;&lt;/i&gt;
+&lt;i class="fas fa-camera-retro fa-lg"&gt;&lt;/i&gt;
+&lt;i class="fas fa-camera-retro fa-2x"&gt;&lt;/i&gt;
+</pre>
+</div>
+
+<div class="centered">
+	<i class="fas fa-camera-retro fa-sm"></i>
+	<i class="fas fa-camera-retro fa-lg"></i>
+	<i class="fas fa-camera-retro fa-2x"></i>
+</div>
+
+<img src="./images/size-chart.png" alt="Size Chart">
+
+				</section>
 
 				<section>
 					<h2>Other Info</h2>
@@ -181,6 +236,8 @@
 		<script>
 			Reveal.initialize();
 		</script>
+
+		<script defer src="../fontawesome/on-server/js/fontawesome-all.js"></script>
 
 	</body>
 </html>
