@@ -131,6 +131,7 @@
 					<p class="centered">1 icon could = 10+ images.</p>
 					<p class="centered">How many icons in 1 webapp?</p>
 					<p class="centered">What if a color changes in the design?</p>
+					<p class="centered">Does the site have seasonal color changes?</p>
 					<p class="centered">= LOTS of repetitive work!</p>
 				</section>
 
@@ -161,7 +162,7 @@
 						<li>Unzip that folder and stick it on your website.</li>
 					</ul>
 <pre class="code">
-&lt;script defer src="/fontawesome/fontawesome-all.js"&gt;&lt;/script&gt;
+&lt;script src="/fontawesome/fontawesome-all.js"&gt;&lt;/script&gt;
 </pre>
 				</section>
 
@@ -169,19 +170,24 @@
 					<h2>How do I install Font Awesome?</h2>
 					<p class="centered">Can also just use their CDN:</p>
 <pre class="code">
-&lt;script defer<br />src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"&gt;&lt;/script&gt;
+&lt;script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"&gt;&lt;/script&gt;
 </pre>
 				</section>
 
 				<section>
 					<h2>Using Font Awesome</h2>
-					<p>Just use the <i> HTML tag wherever you want an icon:</i>
+					<p>Just use the &lt;i&gt; HTML tag wherever you want an icon:</p>
 <pre class="code">
 &lt;i class="fas fa-camera-retro"&gt;&lt;/i&gt;
 </pre>
 					<p>"fas" is the default style, "fa-camera-retro" is the icon itself</p>
-					<p>Four styles available: Solid (fas), Regular (far), Light (fal), Brands (fab)</p>
+				</section>
+
+				<section>
+					<h2>Using Font Awesome</h2>
+					<p>Four styles available:<br />Solid (fas), Regular (far), Light (fal), Brands (fab)</p>
 					<p>Regular and Light are only in the Pro version</p>
+					<img src="./images/styles-chart.png" />
 				</section>
 
 				<section>
@@ -262,11 +268,11 @@
 	&lt;div&gt;&lt;i class="fas fa-book fa-fw"&gt;&lt;/i&gt; Tim Alexander&lt;/div&gt;
 </pre>
 
-<div style="text-align: left;">
+<pre>
 	<div><i class="fas fa-home fa-fw"></i> Home</div>
 	<div><i class="fas fa-info fa-fw"></i> Info</div>
 	<div><i class="fas fa-book fa-fw"></i> Library</div>
-</div>
+</pre>
 
 					<div class="centered">
 						<a href="../CodeDemos/4_FixedWidth.html">Demo</a>
@@ -309,6 +315,10 @@
 &lt;i class="fas fa-pencil-alt fa-4x" data-fa-mask="fas fa-comment"&gt;&lt;/i&gt;
 </pre>
 
+					<div class="centered">
+						<a href="../CodeDemos/6_MaskingIcons.html">Demo</a>
+					</div>
+
 				</section>
 
 				<section>
@@ -327,6 +337,9 @@
 	&lt;/li&gt;
 &lt&lt;/ul&gt;
 </pre>
+					<div class="centered">
+						<a href="../CodeDemos/7_ListIcons.html">Demo</a>
+					</div>
 				</section>
 
 				<section>
@@ -340,6 +353,9 @@
 <pre class="code">
 &lt;i class="fab fa-apple fa-3x fa-pulse"&gt;&lt;/i&gt;
 </pre>
+					<div class="centered">
+						<a href="../CodeDemos/8_Animations.html">Demo</a>
+					</div>
 				</section>
 
 				<section>
@@ -361,7 +377,7 @@
 					   data-fa-transform="shrink-3.5 down-1.6 right-1.25" 
 					   class="fab fa-angular fa-spin" 
 					   data-fa-mask="fab fa-angular"></i>
-<pre class="code">
+<!-- <pre class="code">
 &lt;style&gt;
 	#combining-things
 	{
@@ -379,7 +395,11 @@
    data-fa-transform="shrink-3.5 down-1.6 right-1.25" 
    class="fab fa-angular fa-spin" 
    data-fa-mask="fab fa-angular"&gt;&lt;/i&gt;
-</pre>
+</pre> -->
+					<div class="centered">
+						<a href="../CodeDemos/9_Combinations.html">Demo</a>
+					</div>
+
 				</section>
 
 				<section>
@@ -387,7 +407,20 @@
 					<ul>
 						<li>30MB download</li>
 						<li>Some extra overhead in your site.<br />fontawesome-all.js is 700K by itself</li>
-						<li>Pro version is subscription based (boo!)</li>
+						<li>Pro version is subscription based</li>
+						<li>Styling the I or parent DIV to customize</li>
+						<li>Rare CSS quirks<br />had to use in-line CSS to customize some things</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Performance?</h2>
+					<ul>
+						<li>Really good</li>
+						<li>Docs say up to 1000 icons per page with no noticable lags</li>
+						<li>After that, not sure</li>
+						<li>When would you ever really <em>need</em> more than 1000 icons per page?</li>
+						<li>Large scale tile based games?</li>
 					</ul>
 				</section>
 
@@ -397,12 +430,38 @@
 				</section>
 
 				<section>
+					<h2>Taking It Further</h2>
+					<ul>
+						<li>This is all just CSS</li>
+						<li>Can use it in SASS, LESS, jQuery, Vanilla JavaScript, etc</li>
+						<li>All the CSS knowledge you already have still works</li>
+						<li>All the JavaScript tricks you currently use still work too</li>
+						<li>Works in Bootstrap, Angular, Vue.js, etc</li>
+						<li>Remember: the browser just sees a font and CSS</li>
+					</ul>
+				</section>
+
+				<section>
 					<h2>But Wait, There's More!</h2>
 					<ul>
 						<li>Vue.js Component and Docs</li>
 						<li>React Component and Docs</li>
 						<li>JavaScript and Node.js APIs</li>
-						<li>(No Angular or Ember.js yet but maybe later.)</li>
+						<li>(No Angular or Ember.js yet but maybe later)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Using Font Awesome in a Real World App</h2>
+					<ul>
+						<li>MuraCMS</li>
+						<li>Free, open source CMS engine</li>
+						<li>By Blue River in Sacramento</li>
+						<li>Built sites for Apple, Intuit, Amtrak, State of California, etc</li>
+						<li>The Mura Admin tools use Font Awesome all over the place</li>
+						<li>getmura.com</li>
+						<li>MuraCon 2018 in April (lots of Docker and Digital Markeitng content!)</li>
+						<li>Demo - southofshasta.com</li>
 					</ul>
 				</section>
 
@@ -421,7 +480,7 @@
 				</section>				
 
 				<section>
-					<h2>Questions? Comments?<br />Need Consulting?</h2>
+					<h2>Questions? Comments?<br />Need Help With a Project?</h2>
 					<ul>
 						<li>southofshasta.com</li>
 						<li>nolan@southofshasta.com</li>
